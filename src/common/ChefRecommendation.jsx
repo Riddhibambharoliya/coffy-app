@@ -7,10 +7,10 @@ const ChefRecommendation = () => {
     return (
         <div className="bg-[#242526] md:py-12 py-5">
             {/* Header Section */}
-            <div className="text-center text-white md:mb-8 py-10 md:py-16">
+            <div className="text-center text-white lg:mb-8 py-10 lg:py-16">
                 <h2 className="text-4xl font-normal pb-3 md:text-4xl ">RECOMMENDED BY OUR CHEF</h2>
                 <div className="flex justify-center items-center">
-                    <p className="mt-2 text-gray-400 text-sm md:text-sm md:w-2/5 w-full px-5">
+                    <p className="mt-2 text-gray-400 text-sm md:text-sm lg:w-2/5 w-full px-5">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </p>
                 </div>
@@ -23,7 +23,7 @@ const ChefRecommendation = () => {
                 spaceBetween={1}
                 slidesPerView={1}
                 pagination={{ clickable: true }}
-                className="md:w-9/12 w-full " // Center align
+                className="lg:w-9/12 w-full mb-5" // Center align
             >
                 {/* Slide 1 */}
                 <SwiperSlide>

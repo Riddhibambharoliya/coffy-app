@@ -58,28 +58,30 @@ const ImageGrid = () => {
 
       {/* Full-Screen Image Modal */}
       {isOpen && (
-        <div className="fixed inset-0 bg-transparent bg-opacity-80 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-transparent  flex items-center justify-center z-50 bg-white">
           {/* Close Button */}
           <button
-            className="absolute top-8 right-8 text-white text-4xl p-2 bg-gray-800 rounded-full hover:bg-gray-700"
+            className="absolute top-0 right-0 text-white text-xl p-3 bg-gray-800 hover:bg-gray-700 "
             onClick={closeModal}
           >
             <AiOutlineClose />
           </button>
 
           {/* Image */}
-          <div className="relative">
+          <div className="relative w-full">
+          <div className='w-full flex justify-center items-center'>
             <img src={images[currentIndex].src} alt={images[currentIndex].alt} className="max-h-[80vh] max-w-[80vw] cursor-pointer" onClick={showNext} />
+          </div>
 
             {/* Navigation Buttons */}
             <button
-              className="absolute top-1/2 -left-12 transform -translate-y-1/2 text-white text-4xl p-2 bg-transparent rounded-full hover:bg-gray-700"
+              className="absolute top-1/2 left-5 transform -translate-y-1/2 text-black text-4xl p-2 bg-transparent rounded-full"
               onClick={showPrev}
             >
               <AiOutlineLeft />
             </button>
             <button
-              className="absolute top-1/2 -right-12 transform -translate-y-1/2 text-white text-4xl p-2 bg-transparent rounded-full hover:bg-gray-700"
+              className="absolute top-1/2 right-5 transform -translate-y-1/2 text-black text-4xl p-2 bg-transparent rounded-full"
               onClick={showNext}
             >
               <AiOutlineRight />

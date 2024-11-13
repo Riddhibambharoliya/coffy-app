@@ -50,7 +50,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-10 md:py-20 px-4 md:px-8 lg:px-16 bg-white">
+      <section id="services" className="py-10 md:py-10 px-4 md:px-8 lg:px-10 bg-white">
         <CafeServices />
       </section>
 
