@@ -36,7 +36,7 @@ const ImageGrid = () => {
 
   return (
     <>
-      <div className="grid grid-cols-2  md:grid-cols-4 gap-2  w-full">
+      <div className="grid grid-cols-1  md:grid-cols-4 md:gap-2 gap-0.5  w-full">
         {images.map((image, index) => (
           <div
             key={image.id}
@@ -49,7 +49,7 @@ const ImageGrid = () => {
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
             {/* Overlay with icons */}
-            <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+            <div className="absolute inset-0 hover:bg-black hover:bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
               <TbPhotoSearch className="text-white text-2xl md:text-3xl cursor-pointer hover:text-[#d0ae5e]" />
             </div>
           </div>

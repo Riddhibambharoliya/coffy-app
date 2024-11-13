@@ -26,13 +26,13 @@ const Header = () => {
     <div>
       <header>
         {/* Navigation Bar */}
-        <div className="flex justify-center items-center w-10/12 ">
+        <div className="flex justify-center items-center w-full ">
           <nav
-            className={`container fixed top-0 left-0 right-0 z-50 transition duration-300 ${
+            className={` fixed top-0 left-0 right-0 z-50 transition duration-300 flex md:flex-row flex-col md:justify-center md:items-center ${
               isScrolled ? "bg-black shadow-md" : "bg-transparent"
             } py-4 md:py-5 px-4 lg:px-8`} // Responsive padding
           >
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between lg:w-11/12 md:w-full">
               {/* Logo Section */}
               <a className="flex items-center" href="#">
                 <img
@@ -43,7 +43,7 @@ const Header = () => {
               </a>
 
               {/* Desktop Menu */}
-              <div className="hidden md:flex md:items-center space-x-4 lg:space-x-8">
+              <div className="hidden md:flex md:items-center lg:space-x-2">
                 {/* Menu only visible on medium and larger screens */}
                 <Link
                   to="about"
@@ -104,7 +104,7 @@ const Header = () => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                offset={-70} className="bg-[#d0ae5e] text-black px-4 py-1 text-sm rounded transition hover:bg-[#c9a254]">
+                offset={-70} className="bg-[#d0ae5e] text-black px-4 py-1 text-sm rounded transition hover:bg-[#c9a254] cursor-pointer">
                   Reservation
                 </Link>
               </div>
@@ -132,6 +132,7 @@ const Header = () => {
                 to="about"
                 smooth={true}
                 duration={500}
+                onClick={toggleMenu}
                 spy={true}
                 offset={-70}
                 className="block text-white px-4 py-2 cursor-pointer hover:text-[#d0ae5e] transition-colors duration-300"
@@ -142,6 +143,7 @@ const Header = () => {
                 to="services"
                 smooth={true}
                 duration={500}
+                onClick={toggleMenu}
                 spy={true}
                 offset={-70}
                 className="block text-white px-4 py-2 cursor-pointer hover:text-[#d0ae5e] transition-colors duration-300"
@@ -152,6 +154,7 @@ const Header = () => {
                 to="menu"
                 smooth={true}
                 duration={500}
+                onClick={toggleMenu}
                 spy={true}
                 offset={-70}
                 className="block text-white px-4 py-2 cursor-pointer hover:text-[#d0ae5e] transition-colors duration-300"
@@ -162,6 +165,7 @@ const Header = () => {
                 to="review"
                 smooth={true}
                 duration={500}
+                onClick={toggleMenu}
                 spy={true}
                 offset={-70}
                 className="block text-white px-4 py-2 cursor-pointer hover:text-[#d0ae5e] transition-colors duration-300"
@@ -171,6 +175,7 @@ const Header = () => {
               <Link  to="blog"
                   smooth={true}
                   duration={500}
+                  onClick={toggleMenu}
                   spy={true}
                   offset={-70} className="block text-white px-4 py-2 cursor-pointer hover:text-[#d0ae5e] transition-colors duration-300">
                 Blog
@@ -178,6 +183,7 @@ const Header = () => {
               <Link  to="contact"
                   smooth={true}
                   duration={500}
+                  onClick={toggleMenu}
                   spy={true}
                   offset={-70}  className="block text-white px-4 py-2 cursor-pointer hover:text-[#d0ae5e] transition-colors duration-300">
                 Contact
@@ -186,8 +192,9 @@ const Header = () => {
               to="form"
               smooth={true}
               duration={500}
+              onClick={toggleMenu}
               spy={true}
-              offset={-70}  className="bg-[#d0ae5e] text-black px-4 py-1 text-sm rounded-lg mx-4 mt-2 block w-fit">
+              offset={-70}  className="bg-[#d0ae5e] text-black px-4 py-1 text-sm rounded-lg mx-4 mt-2 block w-fit cursor-pointer">
                 Reservation
               </Link>
             </div>

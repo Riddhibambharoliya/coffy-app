@@ -4,9 +4,9 @@ import { GiRoundStar } from "react-icons/gi";
 
 const CafeReview = () => {
     return (
-        <div className="flex flex-col items-center py-24 w-full bg-[#fcf8ee]"> {/* Main Container */}
+        <div className="flex flex-col items-center md:py-24 py-14 w-full bg-[#fcf8ee]"> {/* Main Container */}
             {/* Title Section */}
-            <div className="w-11/12 sm:w-10/12 text-center px-4 sm:px-0">
+            <div className="w-full  md:w-10/12 text-center px-5 md:px-0">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 opacity-95">CAFE REVIEW</h1>
                 <div className='flex justify-center items-center'>
                     <p className="text-gray-600 mb-12 w-full sm:w-3/4 lg:w-2/4 opacity-65">
@@ -16,7 +16,7 @@ const CafeReview = () => {
             </div>
 
             {/* Reviews Section */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-11/12 md:w-10/12 gap-8 px-4 sm:px-7">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full md:w-10/12 md:gap-8  gap-5 px-5 md:px-7">
                 {/* Review Cards */}
                 {[...Array(3)].map((_, index) => (
                     <div key={index} className="bg-white p-6 text-center w-full border border-slate-200">

@@ -4,9 +4,9 @@ export default function About() {
     return (
         <div className="flex justify-center items-center">
             <div className="relative w-full min-h-screen bg-[url('https://www.themezaa.com/html/leadgen/demo/cafe/images/bg-image/hero-bg17.jpg')] bg-cover bg-center">
-                <div className="inset-0 p-10" />
-                <div className="z-10 grid grid-cols-1 md:grid-cols-2 mx-auto px-4 py-16 max-w-screen-xl w-10/12">
-                    <div className="md:w-4/5 flex flex-col justify-center">
+                <div className="inset-0 md:p-10" />
+                <div className="z-10 grid grid-cols-1 md:grid-cols-2 mx-auto px-4 md:py-16 py-5 max-w-screen-xl md:w-10/12">
+                    <div className="md:w-4/5 flex flex-col justify-center items-center text-center">
                         <h3 className="text-[#d0ae5e] font-semibold mb-4 text-sm md:text-lg lg:text-xl">
                             WELCOME TO COFFEE SHOP.
                         </h3>

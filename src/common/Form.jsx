@@ -6,7 +6,7 @@ import Textarea from '../components/ui/Textarea'; // Adjust the path as needed
 export default function Form() {
   return (
     <div
-      className="relative min-h-screen flex items-center justify-center bg-cover bg-center p-4 sm:p-8"
+      className="relative md:min-h-screen md:py-0 py-14 flex items-center justify-center bg-cover bg-center p-4 md:p-8"
       style={{
         backgroundImage:
           "url('https://www.themezaa.com/html/leadgen/demo/cafe/images/bg-image/hero-bg3.jpg')",
@@ -16,12 +16,12 @@ export default function Form() {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       {/* Form Container */}
-      <div className="relative z-10 w-full max-w-lg p-6 sm:p-12 text-center text-white rounded-lg">
+      <div className="relative z-10 w-full max-w-lg  md:p-12 text-center text-white rounded-lg ">
         {/* Title */}
-        <h2 className="text-2xl sm:text-4xl font-medium mb-4 opacity-90">BOOK A TABLE</h2>
+        <h2 className="text-2xl sm:text-4xl font-medium mb-7 opacity-90">BOOK A TABLE</h2>
 
         {/* Description */}
-        <p className="mb-8 text-sm sm:text-base opacity-75">
+        <p className="md:mb-8 mb-10 text-sm sm:text-base opacity-75">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
         </p>
 
@@ -49,7 +49,7 @@ export default function Form() {
           />
 
           {/* Submit Button */}
-          <Button className="w-full sm:w-fit bg-[#d0ae5e] hover:bg-amber-200 text-white text-sm py-2 px-4 rounded-md">
+          <Button className="w-fit bg-[#d0ae5e] hover:bg-amber-200 text-white text-sm py-3 px-10 font-semibold tracking-[1px] rounded-md">
             BOOK TABLE
           </Button>
         </form>
